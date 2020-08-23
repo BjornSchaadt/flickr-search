@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css?v2" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css?v2">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app" class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center my-5">
+                    <h1>Search images on Flickr</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center my-5">
+                    <div class="search-box">
+                        <input class="search-bar" v-on v-model="query" type="text" v-on:keyup="fetchImages" value="Copenhagen"/>
+                        <p class="m-3">Results for: {{ querystring }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1 text-center my-5">
+                    <div class="container-fluid">
+                        <div id="imageContainer" class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js?v3"></script>
+    </body>
+</html>
