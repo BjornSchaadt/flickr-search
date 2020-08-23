@@ -4,9 +4,9 @@ This is a test project for exploring the Public Flickr API.
 
 Improvements:
 * Component splitting: Solution should be broken down in smaller vue components to make it easier to re-use components 
-  ** Search component
-  ** Image container
-  ** Thumbnail render
+  - Search component
+  - Image container
+  - Thumbnail render
   
 * Caching
   ** Consider cashing for 12 hours on the results for better performance on popular searches
